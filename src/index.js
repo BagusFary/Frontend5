@@ -2,16 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Button from './EventHandling/ButtonTest';
+import Toolbar from './EventHandling/ButtonWithProps';
+import Toolbar2 from './EventHandling/ButtonWithProps2';
+import Test from './EventHandling/NamingEventHandler';
+import EventPropragation from './EventHandling/EventPropagation';
+import StoppingEventPropagation from './EventHandling/StoppingEventPropagation';
+import Signup from './EventHandling/PreventDefault';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Button />
+    <Toolbar />
+    <Toolbar2 />
+    <Test />
+    <EventPropragation />
+    <StoppingEventPropagation />
+    <Signup />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();
